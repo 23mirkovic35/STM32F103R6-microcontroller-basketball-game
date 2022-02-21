@@ -1,0 +1,33 @@
+/*
+ * display.c
+ *
+ *  Created on: Jan 31, 2022
+ *      Author: Miroslav
+ */
+
+
+#include "display.h"
+
+uint8_t seven_seg[] =
+{ 0x81, 0xCF, 0x92, 0x86, 0xCC, 0xA4, 0xA0, 0x8F, 0x80, 0x84};
+
+void display(){
+	//GPIOC->ODR = seven_seg[1];
+	HAL_TIM_Base_Start_IT(&htim1);
+}
+
+uint32_t counter = 0;
+uint32_t quarter_minut = 10;
+uint32_t quarter_sec = 0;
+
+uint32_t possession_sec = 24;
+uint32_t possession_desetinka = 0;
+
+uint8_t time_left[4] = {0, 0, 0, 0};
+uint8_t curr = 0;
+
+extern uint8_t showTime;
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+	if(htim->Instance == TIM1)
+}

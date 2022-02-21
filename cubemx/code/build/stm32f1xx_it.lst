@@ -1,0 +1,578 @@
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"stm32f1xx_it.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.NMI_Handler,"ax",%progbits
+  16              		.align	1
+  17              		.global	NMI_Handler
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	NMI_Handler:
+  25              	.LFB65:
+  26              		.file 1 "../Core/Src/stm32f1xx_it.c"
+   1:../Core/Src/stm32f1xx_it.c **** 
+  27              		.loc 1 72 1 view -0
+  28              		.cfi_startproc
+  29              		@ Volatile: function does not return.
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              	.L2:
+  34              		.loc 1 77 3 discriminator 1 view .LVU1
+  35              		.loc 1 79 3 discriminator 1 view .LVU2
+  36              		.loc 1 77 9 discriminator 1 view .LVU3
+  37 0000 FEE7     		b	.L2
+  38              		.cfi_endproc
+  39              	.LFE65:
+  41              		.section	.text.HardFault_Handler,"ax",%progbits
+  42              		.align	1
+  43              		.global	HardFault_Handler
+  44              		.syntax unified
+  45              		.thumb
+  46              		.thumb_func
+  47              		.fpu softvfp
+  49              	HardFault_Handler:
+  50              	.LFB66:
+  51              		.loc 1 87 1 view -0
+  52              		.cfi_startproc
+  53              		@ Volatile: function does not return.
+  54              		@ args = 0, pretend = 0, frame = 0
+  55              		@ frame_needed = 0, uses_anonymous_args = 0
+  56              		@ link register save eliminated.
+  57              	.L4:
+  58              		.loc 1 91 3 discriminator 1 view .LVU5
+  59              		.loc 1 95 3 discriminator 1 view .LVU6
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s 			page 2
+
+
+  60              		.loc 1 91 9 discriminator 1 view .LVU7
+  61 0000 FEE7     		b	.L4
+  62              		.cfi_endproc
+  63              	.LFE66:
+  65              		.section	.text.MemManage_Handler,"ax",%progbits
+  66              		.align	1
+  67              		.global	MemManage_Handler
+  68              		.syntax unified
+  69              		.thumb
+  70              		.thumb_func
+  71              		.fpu softvfp
+  73              	MemManage_Handler:
+  74              	.LFB67:
+  75              		.loc 1 102 1 view -0
+  76              		.cfi_startproc
+  77              		@ Volatile: function does not return.
+  78              		@ args = 0, pretend = 0, frame = 0
+  79              		@ frame_needed = 0, uses_anonymous_args = 0
+  80              		@ link register save eliminated.
+  81              	.L6:
+  82              		.loc 1 106 3 discriminator 1 view .LVU9
+  83              		.loc 1 110 3 discriminator 1 view .LVU10
+  84              		.loc 1 106 9 discriminator 1 view .LVU11
+  85 0000 FEE7     		b	.L6
+  86              		.cfi_endproc
+  87              	.LFE67:
+  89              		.section	.text.BusFault_Handler,"ax",%progbits
+  90              		.align	1
+  91              		.global	BusFault_Handler
+  92              		.syntax unified
+  93              		.thumb
+  94              		.thumb_func
+  95              		.fpu softvfp
+  97              	BusFault_Handler:
+  98              	.LFB68:
+  99              		.loc 1 117 1 view -0
+ 100              		.cfi_startproc
+ 101              		@ Volatile: function does not return.
+ 102              		@ args = 0, pretend = 0, frame = 0
+ 103              		@ frame_needed = 0, uses_anonymous_args = 0
+ 104              		@ link register save eliminated.
+ 105              	.L8:
+ 106              		.loc 1 121 3 discriminator 1 view .LVU13
+ 107              		.loc 1 125 3 discriminator 1 view .LVU14
+ 108              		.loc 1 121 9 discriminator 1 view .LVU15
+ 109 0000 FEE7     		b	.L8
+ 110              		.cfi_endproc
+ 111              	.LFE68:
+ 113              		.section	.text.UsageFault_Handler,"ax",%progbits
+ 114              		.align	1
+ 115              		.global	UsageFault_Handler
+ 116              		.syntax unified
+ 117              		.thumb
+ 118              		.thumb_func
+ 119              		.fpu softvfp
+ 121              	UsageFault_Handler:
+ 122              	.LFB69:
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s 			page 3
+
+
+ 123              		.loc 1 132 1 view -0
+ 124              		.cfi_startproc
+ 125              		@ Volatile: function does not return.
+ 126              		@ args = 0, pretend = 0, frame = 0
+ 127              		@ frame_needed = 0, uses_anonymous_args = 0
+ 128              		@ link register save eliminated.
+ 129              	.L10:
+ 130              		.loc 1 136 3 discriminator 1 view .LVU17
+ 131              		.loc 1 140 3 discriminator 1 view .LVU18
+ 132              		.loc 1 136 9 discriminator 1 view .LVU19
+ 133 0000 FEE7     		b	.L10
+ 134              		.cfi_endproc
+ 135              	.LFE69:
+ 137              		.section	.text.SVC_Handler,"ax",%progbits
+ 138              		.align	1
+ 139              		.global	SVC_Handler
+ 140              		.syntax unified
+ 141              		.thumb
+ 142              		.thumb_func
+ 143              		.fpu softvfp
+ 145              	SVC_Handler:
+ 146              	.LFB70:
+ 147              		.loc 1 147 1 view -0
+ 148              		.cfi_startproc
+ 149              		@ args = 0, pretend = 0, frame = 0
+ 150              		@ frame_needed = 0, uses_anonymous_args = 0
+ 151              		@ link register save eliminated.
+ 152              		.loc 1 154 1 view .LVU21
+ 153 0000 7047     		bx	lr
+ 154              		.cfi_endproc
+ 155              	.LFE70:
+ 157              		.section	.text.DebugMon_Handler,"ax",%progbits
+ 158              		.align	1
+ 159              		.global	DebugMon_Handler
+ 160              		.syntax unified
+ 161              		.thumb
+ 162              		.thumb_func
+ 163              		.fpu softvfp
+ 165              	DebugMon_Handler:
+ 166              	.LFB71:
+ 167              		.loc 1 160 1 view -0
+ 168              		.cfi_startproc
+ 169              		@ args = 0, pretend = 0, frame = 0
+ 170              		@ frame_needed = 0, uses_anonymous_args = 0
+ 171              		@ link register save eliminated.
+ 172              		.loc 1 167 1 view .LVU23
+ 173 0000 7047     		bx	lr
+ 174              		.cfi_endproc
+ 175              	.LFE71:
+ 177              		.section	.text.PendSV_Handler,"ax",%progbits
+ 178              		.align	1
+ 179              		.global	PendSV_Handler
+ 180              		.syntax unified
+ 181              		.thumb
+ 182              		.thumb_func
+ 183              		.fpu softvfp
+ 185              	PendSV_Handler:
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s 			page 4
+
+
+ 186              	.LFB72:
+ 187              		.loc 1 173 1 view -0
+ 188              		.cfi_startproc
+ 189              		@ args = 0, pretend = 0, frame = 0
+ 190              		@ frame_needed = 0, uses_anonymous_args = 0
+ 191              		@ link register save eliminated.
+ 192              		.loc 1 180 1 view .LVU25
+ 193 0000 7047     		bx	lr
+ 194              		.cfi_endproc
+ 195              	.LFE72:
+ 197              		.section	.text.SysTick_Handler,"ax",%progbits
+ 198              		.align	1
+ 199              		.global	SysTick_Handler
+ 200              		.syntax unified
+ 201              		.thumb
+ 202              		.thumb_func
+ 203              		.fpu softvfp
+ 205              	SysTick_Handler:
+ 206              	.LFB73:
+ 207              		.loc 1 186 1 view -0
+ 208              		.cfi_startproc
+ 209              		@ args = 0, pretend = 0, frame = 0
+ 210              		@ frame_needed = 0, uses_anonymous_args = 0
+ 211 0000 08B5     		push	{r3, lr}
+ 212              	.LCFI0:
+ 213              		.cfi_def_cfa_offset 8
+ 214              		.cfi_offset 3, -8
+ 215              		.cfi_offset 14, -4
+ 216              		.loc 1 190 3 view .LVU27
+ 217 0002 014B     		ldr	r3, .L16
+ 218 0004 9847     		blx	r3
+ 219              	.LVL0:
+ 220              		.loc 1 194 1 is_stmt 0 view .LVU28
+ 221 0006 08BD     		pop	{r3, pc}
+ 222              	.L17:
+ 223              		.align	2
+ 224              	.L16:
+ 225 0008 00000000 		.word	HAL_IncTick
+ 226              		.cfi_endproc
+ 227              	.LFE73:
+ 229              		.section	.text.EXTI9_5_IRQHandler,"ax",%progbits
+ 230              		.align	1
+ 231              		.global	EXTI9_5_IRQHandler
+ 232              		.syntax unified
+ 233              		.thumb
+ 234              		.thumb_func
+ 235              		.fpu softvfp
+ 237              	EXTI9_5_IRQHandler:
+ 238              	.LFB74:
+ 239              		.loc 1 207 1 is_stmt 1 view -0
+ 240              		.cfi_startproc
+ 241              		@ args = 0, pretend = 0, frame = 0
+ 242              		@ frame_needed = 0, uses_anonymous_args = 0
+ 243 0000 08B5     		push	{r3, lr}
+ 244              	.LCFI1:
+ 245              		.cfi_def_cfa_offset 8
+ 246              		.cfi_offset 3, -8
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s 			page 5
+
+
+ 247              		.cfi_offset 14, -4
+ 248              		.loc 1 211 3 view .LVU30
+ 249 0002 4FF40070 		mov	r0, #512
+ 250 0006 014B     		ldr	r3, .L20
+ 251 0008 9847     		blx	r3
+ 252              	.LVL1:
+ 253              		.loc 1 215 1 is_stmt 0 view .LVU31
+ 254 000a 08BD     		pop	{r3, pc}
+ 255              	.L21:
+ 256              		.align	2
+ 257              	.L20:
+ 258 000c 00000000 		.word	HAL_GPIO_EXTI_IRQHandler
+ 259              		.cfi_endproc
+ 260              	.LFE74:
+ 262              		.section	.text.TIM1_UP_IRQHandler,"ax",%progbits
+ 263              		.align	1
+ 264              		.global	TIM1_UP_IRQHandler
+ 265              		.syntax unified
+ 266              		.thumb
+ 267              		.thumb_func
+ 268              		.fpu softvfp
+ 270              	TIM1_UP_IRQHandler:
+ 271              	.LFB75:
+ 272              		.loc 1 221 1 is_stmt 1 view -0
+ 273              		.cfi_startproc
+ 274              		@ args = 0, pretend = 0, frame = 0
+ 275              		@ frame_needed = 0, uses_anonymous_args = 0
+ 276 0000 08B5     		push	{r3, lr}
+ 277              	.LCFI2:
+ 278              		.cfi_def_cfa_offset 8
+ 279              		.cfi_offset 3, -8
+ 280              		.cfi_offset 14, -4
+ 281              		.loc 1 225 3 view .LVU33
+ 282 0002 0248     		ldr	r0, .L24
+ 283 0004 024B     		ldr	r3, .L24+4
+ 284 0006 9847     		blx	r3
+ 285              	.LVL2:
+ 286              		.loc 1 229 1 is_stmt 0 view .LVU34
+ 287 0008 08BD     		pop	{r3, pc}
+ 288              	.L25:
+ 289 000a 00BF     		.align	2
+ 290              	.L24:
+ 291 000c 00000000 		.word	htim1
+ 292 0010 00000000 		.word	HAL_TIM_IRQHandler
+ 293              		.cfi_endproc
+ 294              	.LFE75:
+ 296              		.section	.text.TIM3_IRQHandler,"ax",%progbits
+ 297              		.align	1
+ 298              		.global	TIM3_IRQHandler
+ 299              		.syntax unified
+ 300              		.thumb
+ 301              		.thumb_func
+ 302              		.fpu softvfp
+ 304              	TIM3_IRQHandler:
+ 305              	.LFB76:
+ 306              		.loc 1 235 1 is_stmt 1 view -0
+ 307              		.cfi_startproc
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s 			page 6
+
+
+ 308              		@ args = 0, pretend = 0, frame = 0
+ 309              		@ frame_needed = 0, uses_anonymous_args = 0
+ 310 0000 08B5     		push	{r3, lr}
+ 311              	.LCFI3:
+ 312              		.cfi_def_cfa_offset 8
+ 313              		.cfi_offset 3, -8
+ 314              		.cfi_offset 14, -4
+ 315              		.loc 1 239 3 view .LVU36
+ 316 0002 0248     		ldr	r0, .L28
+ 317 0004 024B     		ldr	r3, .L28+4
+ 318 0006 9847     		blx	r3
+ 319              	.LVL3:
+ 320              		.loc 1 243 1 is_stmt 0 view .LVU37
+ 321 0008 08BD     		pop	{r3, pc}
+ 322              	.L29:
+ 323 000a 00BF     		.align	2
+ 324              	.L28:
+ 325 000c 00000000 		.word	htim3
+ 326 0010 00000000 		.word	HAL_TIM_IRQHandler
+ 327              		.cfi_endproc
+ 328              	.LFE76:
+ 330              		.section	.text.EXTI15_10_IRQHandler,"ax",%progbits
+ 331              		.align	1
+ 332              		.global	EXTI15_10_IRQHandler
+ 333              		.syntax unified
+ 334              		.thumb
+ 335              		.thumb_func
+ 336              		.fpu softvfp
+ 338              	EXTI15_10_IRQHandler:
+ 339              	.LFB77:
+ 340              		.loc 1 249 1 is_stmt 1 view -0
+ 341              		.cfi_startproc
+ 342              		@ args = 0, pretend = 0, frame = 0
+ 343              		@ frame_needed = 0, uses_anonymous_args = 0
+ 344 0000 10B5     		push	{r4, lr}
+ 345              	.LCFI4:
+ 346              		.cfi_def_cfa_offset 8
+ 347              		.cfi_offset 4, -8
+ 348              		.cfi_offset 14, -4
+ 349              		.loc 1 253 3 view .LVU39
+ 350 0002 4FF48060 		mov	r0, #1024
+ 351 0006 064C     		ldr	r4, .L32
+ 352 0008 A047     		blx	r4
+ 353              	.LVL4:
+ 354              		.loc 1 254 3 view .LVU40
+ 355 000a 4FF40060 		mov	r0, #2048
+ 356 000e A047     		blx	r4
+ 357              	.LVL5:
+ 358              		.loc 1 255 3 view .LVU41
+ 359 0010 4FF48050 		mov	r0, #4096
+ 360 0014 A047     		blx	r4
+ 361              	.LVL6:
+ 362              		.loc 1 256 3 view .LVU42
+ 363 0016 4FF48040 		mov	r0, #16384
+ 364 001a A047     		blx	r4
+ 365              	.LVL7:
+ 366              		.loc 1 260 1 is_stmt 0 view .LVU43
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s 			page 7
+
+
+ 367 001c 10BD     		pop	{r4, pc}
+ 368              	.L33:
+ 369 001e 00BF     		.align	2
+ 370              	.L32:
+ 371 0020 00000000 		.word	HAL_GPIO_EXTI_IRQHandler
+ 372              		.cfi_endproc
+ 373              	.LFE77:
+ 375              		.section	.text.HAL_GPIO_EXTI_Callback,"ax",%progbits
+ 376              		.align	1
+ 377              		.global	HAL_GPIO_EXTI_Callback
+ 378              		.syntax unified
+ 379              		.thumb
+ 380              		.thumb_func
+ 381              		.fpu softvfp
+ 383              	HAL_GPIO_EXTI_Callback:
+ 384              	.LVL8:
+ 385              	.LFB78:
+ 386              		.loc 1 270 47 is_stmt 1 view -0
+ 387              		.cfi_startproc
+ 388              		@ args = 0, pretend = 0, frame = 0
+ 389              		@ frame_needed = 0, uses_anonymous_args = 0
+ 390              		.loc 1 270 47 is_stmt 0 view .LVU45
+ 391 0000 08B5     		push	{r3, lr}
+ 392              	.LCFI5:
+ 393              		.cfi_def_cfa_offset 8
+ 394              		.cfi_offset 3, -8
+ 395              		.cfi_offset 14, -4
+ 396              		.loc 1 271 2 is_stmt 1 view .LVU46
+ 397 0002 B0F5006F 		cmp	r0, #2048
+ 398 0006 26D0     		beq	.L35
+ 399 0008 0BD9     		bls	.L44
+ 400 000a B0F5805F 		cmp	r0, #4096
+ 401 000e 27D0     		beq	.L40
+ 402 0010 B0F5804F 		cmp	r0, #16384
+ 403 0014 0FD1     		bne	.L34
+ 404              		.loc 1 291 4 view .LVU47
+ 405 0016 4FF40041 		mov	r1, #32768
+ 406 001a 1448     		ldr	r0, .L45
+ 407              	.LVL9:
+ 408              		.loc 1 291 4 is_stmt 0 view .LVU48
+ 409 001c 144B     		ldr	r3, .L45+4
+ 410 001e 9847     		blx	r3
+ 411              	.LVL10:
+ 412              		.loc 1 292 3 is_stmt 1 view .LVU49
+ 413              		.loc 1 294 1 is_stmt 0 view .LVU50
+ 414 0020 09E0     		b	.L34
+ 415              	.LVL11:
+ 416              	.L44:
+ 417              		.loc 1 271 2 view .LVU51
+ 418 0022 B0F5007F 		cmp	r0, #512
+ 419 0026 07D0     		beq	.L37
+ 420 0028 B0F5806F 		cmp	r0, #1024
+ 421 002c 03D1     		bne	.L34
+ 422              		.loc 1 282 4 is_stmt 1 view .LVU52
+ 423 002e 114A     		ldr	r2, .L45+8
+ 424 0030 1368     		ldr	r3, [r2]
+ 425 0032 0133     		adds	r3, r3, #1
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s 			page 8
+
+
+ 426 0034 1360     		str	r3, [r2]
+ 427              		.loc 1 283 3 view .LVU53
+ 428              	.LVL12:
+ 429              	.L34:
+ 430              		.loc 1 294 1 is_stmt 0 view .LVU54
+ 431 0036 08BD     		pop	{r3, pc}
+ 432              	.LVL13:
+ 433              	.L37:
+ 434              		.loc 1 273 4 is_stmt 1 view .LVU55
+ 435              		.loc 1 273 19 is_stmt 0 view .LVU56
+ 436 0038 0F4B     		ldr	r3, .L45+12
+ 437 003a 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 438              		.loc 1 273 6 view .LVU57
+ 439 003c 2BB9     		cbnz	r3, .L42
+ 440              		.loc 1 274 5 is_stmt 1 view .LVU58
+ 441              		.loc 1 274 14 is_stmt 0 view .LVU59
+ 442 003e 0123     		movs	r3, #1
+ 443 0040 0E4A     		ldr	r2, .L45+16
+ 444 0042 1370     		strb	r3, [r2]
+ 445              		.loc 1 275 5 is_stmt 1 view .LVU60
+ 446              		.loc 1 275 17 is_stmt 0 view .LVU61
+ 447 0044 0C4A     		ldr	r2, .L45+12
+ 448 0046 1370     		strb	r3, [r2]
+ 449 0048 F5E7     		b	.L34
+ 450              	.L42:
+ 451              		.loc 1 277 5 is_stmt 1 view .LVU62
+ 452              		.loc 1 277 14 is_stmt 0 view .LVU63
+ 453 004a 0023     		movs	r3, #0
+ 454 004c 0B4A     		ldr	r2, .L45+16
+ 455 004e 1370     		strb	r3, [r2]
+ 456              		.loc 1 278 5 is_stmt 1 view .LVU64
+ 457              		.loc 1 278 17 is_stmt 0 view .LVU65
+ 458 0050 094A     		ldr	r2, .L45+12
+ 459 0052 1370     		strb	r3, [r2]
+ 460 0054 EFE7     		b	.L34
+ 461              	.L35:
+ 462              		.loc 1 285 4 is_stmt 1 view .LVU66
+ 463 0056 0A4A     		ldr	r2, .L45+20
+ 464 0058 1368     		ldr	r3, [r2]
+ 465 005a 0133     		adds	r3, r3, #1
+ 466 005c 1360     		str	r3, [r2]
+ 467              		.loc 1 286 3 view .LVU67
+ 468 005e EAE7     		b	.L34
+ 469              	.L40:
+ 470              		.loc 1 288 4 view .LVU68
+ 471 0060 4FF40051 		mov	r1, #8192
+ 472 0064 0148     		ldr	r0, .L45
+ 473              	.LVL14:
+ 474              		.loc 1 288 4 is_stmt 0 view .LVU69
+ 475 0066 024B     		ldr	r3, .L45+4
+ 476 0068 9847     		blx	r3
+ 477              	.LVL15:
+ 478              		.loc 1 289 3 is_stmt 1 view .LVU70
+ 479 006a E4E7     		b	.L34
+ 480              	.L46:
+ 481              		.align	2
+ 482              	.L45:
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s 			page 9
+
+
+ 483 006c 000C0140 		.word	1073810432
+ 484 0070 00000000 		.word	HAL_GPIO_TogglePin
+ 485 0074 00000000 		.word	.LANCHOR2
+ 486 0078 00000000 		.word	.LANCHOR0
+ 487 007c 00000000 		.word	.LANCHOR1
+ 488 0080 00000000 		.word	.LANCHOR3
+ 489              		.cfi_endproc
+ 490              	.LFE78:
+ 492              		.global	button_hold
+ 493              		.global	showTime
+ 494              		.global	team2_score
+ 495              		.global	team1_score
+ 496              		.section	.bss.button_hold,"aw",%nobits
+ 497              		.set	.LANCHOR0,. + 0
+ 500              	button_hold:
+ 501 0000 00       		.space	1
+ 502              		.section	.bss.showTime,"aw",%nobits
+ 503              		.set	.LANCHOR1,. + 0
+ 506              	showTime:
+ 507 0000 00       		.space	1
+ 508              		.section	.bss.team1_score,"aw",%nobits
+ 509              		.align	2
+ 510              		.set	.LANCHOR2,. + 0
+ 513              	team1_score:
+ 514 0000 00000000 		.space	4
+ 515              		.section	.bss.team2_score,"aw",%nobits
+ 516              		.align	2
+ 517              		.set	.LANCHOR3,. + 0
+ 520              	team2_score:
+ 521 0000 00000000 		.space	4
+ 522              		.text
+ 523              	.Letext0:
+ 524              		.file 2 "../c:\\users\\miroslav\\desktop\\gnu mcu\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none-eabi\\in
+ 525              		.file 3 "../c:\\users\\miroslav\\desktop\\gnu mcu\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none-eabi\\in
+ 526              		.file 4 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 527              		.file 5 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 528              		.file 6 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 529              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 530              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 531              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 stm32f1xx_it.c
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:16     .text.NMI_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:24     .text.NMI_Handler:0000000000000000 NMI_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:42     .text.HardFault_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:49     .text.HardFault_Handler:0000000000000000 HardFault_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:66     .text.MemManage_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:73     .text.MemManage_Handler:0000000000000000 MemManage_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:90     .text.BusFault_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:97     .text.BusFault_Handler:0000000000000000 BusFault_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:114    .text.UsageFault_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:121    .text.UsageFault_Handler:0000000000000000 UsageFault_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:138    .text.SVC_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:145    .text.SVC_Handler:0000000000000000 SVC_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:158    .text.DebugMon_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:165    .text.DebugMon_Handler:0000000000000000 DebugMon_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:178    .text.PendSV_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:185    .text.PendSV_Handler:0000000000000000 PendSV_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:198    .text.SysTick_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:205    .text.SysTick_Handler:0000000000000000 SysTick_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:225    .text.SysTick_Handler:0000000000000008 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:230    .text.EXTI9_5_IRQHandler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:237    .text.EXTI9_5_IRQHandler:0000000000000000 EXTI9_5_IRQHandler
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:258    .text.EXTI9_5_IRQHandler:000000000000000c $d
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:263    .text.TIM1_UP_IRQHandler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:270    .text.TIM1_UP_IRQHandler:0000000000000000 TIM1_UP_IRQHandler
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:291    .text.TIM1_UP_IRQHandler:000000000000000c $d
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:297    .text.TIM3_IRQHandler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:304    .text.TIM3_IRQHandler:0000000000000000 TIM3_IRQHandler
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:325    .text.TIM3_IRQHandler:000000000000000c $d
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:331    .text.EXTI15_10_IRQHandler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:338    .text.EXTI15_10_IRQHandler:0000000000000000 EXTI15_10_IRQHandler
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:371    .text.EXTI15_10_IRQHandler:0000000000000020 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:376    .text.HAL_GPIO_EXTI_Callback:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:383    .text.HAL_GPIO_EXTI_Callback:0000000000000000 HAL_GPIO_EXTI_Callback
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:483    .text.HAL_GPIO_EXTI_Callback:000000000000006c $d
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:500    .bss.button_hold:0000000000000000 button_hold
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:506    .bss.showTime:0000000000000000 showTime
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:520    .bss.team2_score:0000000000000000 team2_score
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:513    .bss.team1_score:0000000000000000 team1_score
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:501    .bss.button_hold:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:507    .bss.showTime:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:509    .bss.team1_score:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccfZW1OP.s:516    .bss.team2_score:0000000000000000 $d
+
+UNDEFINED SYMBOLS
+HAL_IncTick
+HAL_GPIO_EXTI_IRQHandler
+htim1
+HAL_TIM_IRQHandler
+htim3
+HAL_GPIO_TogglePin

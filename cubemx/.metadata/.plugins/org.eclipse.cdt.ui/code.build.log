@@ -1,0 +1,12 @@
+12:07:54 **** Build of configuration Default for project code ****
+make all 
+arm-none-eabi-gcc -c -mcpu=cortex-m3 -mthumb   -DUSE_HAL_DRIVER -DSTM32F103x6 -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -mlong-calls -g -gdwarf-2 -fdebug-prefix-map==../ -MMD -MP -MF"build/display.d" -Wa,-a,-ad,-alms=build/display.lst Core/Src/display.c -o build/display.o
+arm-none-eabi-gcc build/main.o build/stm32f1xx_it.o build/stm32f1xx_hal_msp.o build/stm32f1xx_hal_gpio_ex.o build/stm32f1xx_hal_tim.o build/stm32f1xx_hal_tim_ex.o build/stm32f1xx_hal.o build/stm32f1xx_hal_rcc.o build/stm32f1xx_hal_rcc_ex.o build/stm32f1xx_hal_gpio.o build/stm32f1xx_hal_dma.o build/stm32f1xx_hal_cortex.o build/stm32f1xx_hal_pwr.o build/stm32f1xx_hal_flash.o build/stm32f1xx_hal_flash_ex.o build/stm32f1xx_hal_exti.o build/system_stm32f1xx.o build/gpio.o build/tim.o build/display.o build/startup_stm32f103x6.o -mcpu=cortex-m3 -mthumb   -specs=nano.specs -TSTM32F103R6Tx_FLASH.ld  -lc -lm -lnosys  -Wl,-Map=build/code.map,--cref -Wl,--gc-sections -o build/code.elf
+arm-none-eabi-size build/code.elf
+   text	   data	    bss	    dec	    hex	filename
+   7028	     40	   1760	   8828	   227c	build/code.elf
+arm-none-eabi-objcopy -O ihex build/code.elf build/code.hex
+arm-none-eabi-objcopy -O binary -S build/code.elf build/code.bin	
+
+12:07:55 Build Finished. 0 errors, 0 warnings. (took 854ms)
+
